@@ -1,4 +1,4 @@
-Kleine simpele opdrachten om kennis te maken met python
+Kleine simpele opdrachten om kennis te maken met python (voor mezelf)
 
 Base & Syntax
 1. Schrijf een programma dat "Hallo Python!" print en daarna jouw naam
