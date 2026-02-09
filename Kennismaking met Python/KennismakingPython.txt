@@ -1,0 +1,28 @@
+Kleine simpele opdrachten om kennis te maken met python
+
+Base & Syntax
+1. Schrijf een programma dat "Hallo Python!" print en daarna jouw naam
+2. Maak variables voor: naam (string), leeftijd (int) & lengte(float) en print ze in 1 zin
+3. Gebruik input() voor je naam en favoriete kleur en print dit in 1 zin
+4. Vraag 2 getallen en print: som, verschil, product & deling
+
+Conditions & Loops
+5. Vraag een leeftijd en print "Je bent minderjarig" (18<) of "Je bent volwassen" (18>)
+6. Vraag een cijfer (0-10) en print "Goed" (>=8), "Voldoende" (>=6) of "Onvoldoende" (<6)
+7. Print de getallen 1t/m20, daarna alleen de even getallen
+8. Raad het getal: 1. Kies een getal, 2. Gebruiker blijft raden, 3. Stopt bij een goed antwoord
+
+Functions
+9. Schrijf een functie: bereken_oppervlakte(breedte, hoogte) die een oppervlakte teruggeeft
+10. Maak functies voor: optellen, aftrekken, vermenigvuldigen & delen
+11. Maak een fucntie: zeg_hallo(naam="jan") en roep deze aan met & zonder parameter
+
+Lists & Collections
+12. Maak een lijst met 5 items en 1. print ze 1 voor 1, 2. print de lengte
+13. Vraag 5 getallen en stop ze in een lijst. Print de hoogste, laagste & het gemiddelde
+14. Maak een lijst met 20 getallen. Maak hiermee een nieuwe lijst met alleen de even getallen
+15. Vraag namen tot de gebruiker "stop" typt. sorteer alle namen alfabetisch
+
+Dictionaries
+
+Classes & OOP
