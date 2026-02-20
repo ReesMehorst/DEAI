@@ -5,7 +5,7 @@ This repository contains my coursework and assignments for the DEAI module. It i
 ## Repository Structure
 
 * **Kennismaking met Python/**
-  Introductory exercises and notebooks covering basic Python concepts.
+  Introductory exercises and notebooks covering basic Python concepts. (made by: `ReesMehorst` (me))
 
 * **Week x/**
   Weekly assignments and practice material.
