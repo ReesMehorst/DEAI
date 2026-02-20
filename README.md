@@ -18,15 +18,15 @@ This repository contains my coursework and assignments for the DEAI module. It i
 To run the code locally:
 
 1. Install Python (3.14).
-2. Create a virtual environment
-3. Install dependencies:
+2. Create a virtual environment.
+3. Install dependencies using requirements.txt
 
 ## Usage
 
 My assignments are provided as **Jupyter Notebooks**.
 
 Start Jupyter:
-Then open the desired notebook from the repository folders.
+Open the desired notebook from the repository folders.
 
 ## Learning Goals
 
