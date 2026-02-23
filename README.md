@@ -23,6 +23,7 @@ To run the code locally:
 
 ### Recommended extensions
 * Document viewer
+* Markdown Preview Enhanced
 
 ## Usage
 
@@ -40,8 +41,8 @@ The assignments in this repository aim to develop:
 * Working with notebooks and development environments
   
 ## Notes
-
-* This repository is primarily intended for educational purposes.
+* This repository is for my personal use.
+* This repository is primarily intended for my own educational purposes.
 * Content may be incomplete, experimental, or updated as the course progresses.
 
 ---
