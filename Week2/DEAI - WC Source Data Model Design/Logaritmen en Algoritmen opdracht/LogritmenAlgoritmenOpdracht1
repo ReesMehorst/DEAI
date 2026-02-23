@@ -1,0 +1,27 @@
+1. A
+2. C
+3. D
+4. B
+5. B
+6. B
+7. A
+8. B
+9. C
+10. n - 1 (hij hoeft de laatste persoon niet te vragen, omdat hij maar 1 antwoord over heeft)
+11. 5
+12. n^2
+13. n
+14. log2(n)
+15. n^3
+16. n^3
+17. 2n
+18. C
+19. C
+20. D
+21. B
+22. A
+23. C
+24. C
+25. D
+26. O(n + m)
+27. O(nm)
