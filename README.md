@@ -21,9 +21,12 @@ To run the code locally:
 2. Create a virtual environment.
 3. Install dependencies using requirements.txt
 
+### Recommended extensions
+* Document viewer
+
 ## Usage
 
-My assignments are provided as **Jupyter Notebooks**.
+Some of my assignments are provided as **Jupyter Notebooks**.
 
 Start Jupyter:
 Open the desired notebook from the repository folders.
