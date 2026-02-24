@@ -26,10 +26,9 @@ def grootste_stapel(enveloppen):
 
     for i in range(lengte):
         for j in range(i):
-            if past_in(enveloppen[j], enveloppen[i]):
-                if grootste_stapel[j] + 1 > grootste_stapel[i]:
-                    grootste_stapel[i] = grootste_stapel[j] + 1
-                    parent[i] = j
+            if past_in(enveloppen[j], enveloppen[i]) and grootste_stapel[j] + 1 > grootste_stapel[i]:
+                grootste_stapel[i] = grootste_stapel[j] + 1
+                parent[i] = j
 
     max_index = grootste_stapel.index(max(grootste_stapel))
     
