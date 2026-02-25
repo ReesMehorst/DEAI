@@ -63,7 +63,7 @@ CREATE TABLE Monteur (
 
 CREATE TABLE Accessoire_Verkoop (
     accessoire_verkoopnr INT,
-    datum INT,
+    datum DATE,
     aantal INT,
     verkoopprijs INT,
     klant INT NOT NULL,
