@@ -1,0 +1,118 @@
+CREATE TABLE Accessoire (
+	accessoirenr INT,
+	naam VARCHAR(45),
+	standaardprijs FLOAT,
+	inkoopprijs FLOAT,
+	soort VARCHAR(45),
+	leveranciernr INT NOT NULL,
+	leveranciernaam VARCHAR(45),
+	leverancieradres VARCHAR(100),
+	leverancierwoonplaats VARCHAR(45),
+
+	PRIMARY KEY(accessoirenr),
+);
+
+CREATE TABLE Accessoire_Inkoop (
+	inkoopnr INT,
+	inkoopmaand INT,
+	inkoopjaar INT,
+	aantal INT,
+	accessoire INT NOT NULL,
+
+	PRIMARY KEY(inkoopnr),
+	FOREIGN KEY(accessoire) REFERENCES Accessoire(accessoirenr)
+);
+
+CREATE TABLE Klant (
+    klantnr INT,
+    naam VARCHAR(45),
+    adres VARCHAR(100),
+    woonplaats VARCHAR(45),
+    geslacht VARCHAR(5),
+    geboortedatum DATE,
+
+    PRIMARY KEY(klantnr)
+);
+
+CREATE TABLE Monteur (
+    monteurnr INT,
+    naam VARCHAR(45),
+    woonplaats VARCHAR(45),
+    uurloon FLOAT,
+    filiaalnr INT NOT NULL,
+	filiaalnaam VARCHAR(45),
+	filiaaladres VARCHAR(100),
+	filiaalprovincie VARCHAR(45),
+
+    PRIMARY KEY(monteurnr),
+);
+
+CREATE TABLE Accessoire_Verkoop (
+    accessoire_verkoopnr INT,
+    datum DATE,
+    aantal INT,
+    verkoopprijs INT,
+    klant INT NOT NULL,
+    accessoire INT NOT NULL,
+    monteur INT NOT NULL,
+
+    PRIMARY KEY(accessoire_verkoopnr),
+    FOREIGN KEY(accessoire) REFERENCES Accessoire(accessoirenr),
+    FOREIGN KEY(klant) REFERENCES Klant(klantnr),
+    FOREIGN KEY(monteur) REFERENCES Monteur(monteurnr)
+);
+
+CREATE TABLE Fiets (
+	fietsnr INT,
+	soort VARCHAR(45),
+	merk VARCHAR(45),
+	type VARCHAR(45),
+	standaardprijs FLOAT,
+	inkoopprijs FLOAT,
+	kleur VARCHAR(20),
+	fabrikantnr INT NOT NULL,
+	fabrikantnaam VARCHAR(45),
+	fabrikantadres VARCHAR(100),
+	fabrikantplaats VARCHAR(45),
+
+	PRIMARY KEY(fietsnr),
+);
+
+CREATE TABLE Fiets_Inkoop (
+	inkoopnr INT,
+	inkoopmaand INT,
+	inkoopjaar INT,
+	aantal INT,
+	fiets INT NOT NULL,
+
+	PRIMARY KEY(inkoopnr),
+	FOREIGN KEY(fiets) REFERENCES Fiets(fietsnr)
+);
+
+CREATE TABLE Fiets_Verkoop(
+    fiets_verkoopnr INT,
+    datum DATE,
+    aantal INT,
+    verkoopprijs FLOAT,
+    klant INT NOT NULL, 
+    fiets INT NOT NULL, 
+    monteur INT NOT NULL,
+
+    PRIMARY KEY(fiets_verkoopnr),
+    FOREIGN KEY(klant) REFERENCES Klant(klantnr),
+    FOREIGN KEY(fiets) REFERENCES Fiets(fietsnr),
+    FOREIGN KEY(monteur) REFERENCES Monteur(monteurnr)
+);
+
+CREATE TABLE Onderhoud (
+	onderhoudnr INT,
+	datum DATE,
+	starttijd TIME,
+	eindtijd TIME,
+	fiets INT NOT NULL,
+	monteur INT NOT NULL,
+
+	PRIMARY KEY(onderhoudnr),
+	FOREIGN KEY(fiets) REFERENCES Fiets(fietsnr),
+	FOREIGN KEY(monteur) REFERENCES Monteur(monteurnr)
+);
